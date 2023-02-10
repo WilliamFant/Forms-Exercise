@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Customer Experience Survey">
+    <title>Customer Experience Survey</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Customer Experience Survey</legend>
+        <!--  -->
+        <form>
+            <label for="store">Store Name</label>
+            <select name="store">
+                <option hidden>Select a store</option>
+                <option value="3109">3109</option>
+                <option value="2421">2421</option>
+                <option value="5357">5357</option> 
+            </select>
+        </form>
+        <fieldset>
+            <legend>When you visited:</legend>
+            <label for="visitDate">Date Visited</label>
+            <input type="date" id="visitDate" value="2023-01-01">
+            <br>
+            <label for="timeVisit">Time Visited</label>
+            <input type="time" name="timeVisit" value="12:00">
+        </fieldset>
+        <!--  -->
+        <label for="name">Full Name</label>
+        <input type="text" name="name" placeholder="Name">
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Email">
+        <!--  -->
+        <fieldset>
+            <legend>How would you rate your satisfaction with your visit?</legend>
+            <label for="good">Satisfied:</label>
+            <input type="radio" name="radioLink" id="good">
+            <br>
+    
+            <label for="mid">Neither Satisfied or Dis-Satisfied:</label>
+            <input type="radio" name="radioLink" id="mid">
+            <br>
+
+            <label for="bad">Dis-Satisfied:</label>
+            <input type="radio" name="radioLink" id="bad">
+            <br>
+
+            
+        </fieldset>
+        <!-- -->
+        <label for="exp">Tell us about your experience</label>
+        <input type="text" name="exp" id="">
+        <br>
+
+        <label for="visits">Times visited</label>
+        <input type="text" name="visits" id="">
+        <br>
+
+        <input type="checkbox" name="exp" id="">
+        <label for="contact">Please check the box if you would be willing to be contacted for your experience</label>
+        <br>
+        <label for="pass">Password:</label>
+        <input type="password" name="pass" placeholder="Password">
+        <br>
+        <input type="submit" value="Submit">
+    </fieldset>
+</body>
+</html>
