@@ -13,7 +13,7 @@
         <!--  -->
         <form>
             <label for="store">Store Name</label>
-            <select name="store">
+            <select name="store" id="store">
                 <option hidden>Select a store</option>
                 <option value="3109">3109</option>
                 <option value="2421">2421</option>
@@ -23,7 +23,7 @@
         <fieldset>
             <legend>When you visited:</legend>
             <label for="visitDate">Date Visited</label>
-            <input type="date" id="visitDate" value="2023-01-01">
+            <input type="date" id="visitDate" value="2023-01-01" min="2023-01-01" max="2023-12-31">
             <br>
             <label for="timeVisit">Time Visited</label>
             <input type="time" id="timeVisit" value="12:00">
@@ -57,16 +57,18 @@
         <br>
 
         <label for="visits">Times visited</label>
-        <input type="text" name="visits" id="">
+        <input type="number" name="visits" id="visits"  min="0" max="30">
         <br>
 
-        <input type="checkbox" name="contact" id="contact">
+        <input type="checkbox" name="contact" id="contact" required>
         <label for="contact">Please check the box if you would be willing to be contacted for your experience</label>
         <br>
         <label for="pass">Password:</label>
-        <input type="password" name="pass" placeholder="Password">
+        <input type="password" name="pass" placeholder="Password" minlength="5" maxlength="10">
         <br>
-        <input type="submit" value="Submit">
+        <br>
+        <input type="Reset">
+        <input type="Submit" />
     </fieldset>
 </body>
 </html>
